@@ -1,0 +1,6 @@
+@RestaurantPro2.Menu.Api_HostAddress = http://localhost:5029
+
+GET {{RestaurantPro2.Menu.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
