@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RestaurantPro2.Menu.Application\RestaurantPro2.Menu.Application.csproj" />
     <ProjectReference Include="..\RestaurantPro2.Menu.Domain\RestaurantPro2.Menu.Domain.csproj" />
   </ItemGroup>
 

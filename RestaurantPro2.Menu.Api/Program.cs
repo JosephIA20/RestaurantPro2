@@ -1,8 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using RestaurantPro2.Menu.Persistence.Context;
+using RestaurantPro2.Menu.IOC.Dependecys;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+
+builder.Services.AddDbContext<RestauranteContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RestauranteContext")));
+
+// Agregar las dependencias del Modulo de Factura
+builder.Services.AddMenuDependency();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

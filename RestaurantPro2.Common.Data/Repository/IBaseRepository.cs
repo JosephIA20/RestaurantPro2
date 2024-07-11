@@ -18,8 +18,6 @@ namespace RestaurantPro2.Common.Data.Repository
         TEntity GetEntityBy(TType IdPlato);
 
         bool Exists(Expression<Func<TEntity, bool>> filter);
-
-
-
+        List<RestaurantPro2.Menu.Domain.Entities.Menu> GetMenus(int menuId);
     }
 }

@@ -1,9 +1,9 @@
-﻿using RestauranteMaMonolitica.Web.Data.Core;
+﻿
+using RestaurantPro2.Common.Data.Base;
 using System.ComponentModel.DataAnnotations;
 
-namespace RestauranteMaMonolitica.Web.Data.Entities
 {
-    public class Menu: BaseEntity
+    public class Menu
     {
         [Key]
         public int? IdPlato { get; set; }

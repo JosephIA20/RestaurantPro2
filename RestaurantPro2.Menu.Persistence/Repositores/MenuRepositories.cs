@@ -1,5 +1,7 @@
 ﻿
 using RestauranteMaMonolitica.Web.Data.Interfaces;
+using RestaurantPro2.Menu.Application.Dtos;
+using RestaurantPro2.Menu.Domain.Entities;
 using RestaurantPro2.Menu.Persistence.Context;
 
 namespace RestauranteMaMonolitica.Web.Data.Repositores
@@ -29,7 +31,7 @@ namespace RestauranteMaMonolitica.Web.Data.Repositores
             this.context.SaveChanges();
         }
 
-        public void Uptade(MenuUpdateModel menuUpdate)
+        public void Uptade(MenuUpdateDto menuUpdate)
         {
             if (menuUpdate is null)
             {
@@ -48,7 +50,7 @@ namespace RestauranteMaMonolitica.Web.Data.Repositores
             this.context.SaveChanges();
         }
 
-        public void Remove(MenuRemoveModelcs menuRemoveModel)
+        public void Remove(MenuRemoveDto menuRemoveModel)
         {
             Menu menuDelete = this.context.Menu.Find(menuRemoveModel.IdPlato);
             {

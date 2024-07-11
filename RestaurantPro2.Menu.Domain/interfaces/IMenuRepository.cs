@@ -7,6 +7,8 @@ namespace RestaurantPro2.Menu.Domain.interfaces
     {
 
         List<Menu.Domain.Entities.Menu> GetMenus(int menuId);
+
+
     }
 
   }

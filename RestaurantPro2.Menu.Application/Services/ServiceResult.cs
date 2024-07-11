@@ -1,4 +1,6 @@
-﻿using RestaurantPro2.Menu.Application.Interfaces;
+﻿using RestaurantPro2.Menu.Application.Core;
+using RestaurantPro2.Menu.Application.Dtos;
+using RestaurantPro2.Menu.Application.Interfaces;
 
 namespace RestaurantPro2.Menu.Application.Services
 {
@@ -6,15 +8,21 @@ namespace RestaurantPro2.Menu.Application.Services
     {
 
         private readonly IMenuDb MenuDb;
+      
+         public ServiceResult()
+        {
+        }
 
         public ServiceResult(IMenuDb MenuDb)
         {
             this.MenuDb = MenuDb;
         }
 
+        public bool Sucess { get; set; }
+
         public ServiceResult GetMenu(int id)
         {
-            ServiceResult result = new ServiceResult();
+            Service result = new Service();
             try
             {
                 result.Data = MenuDb.GetMenu(id);
@@ -44,9 +52,9 @@ namespace RestaurantPro2.Menu.Application.Services
             return result;
         }
 
-        public ServiceResult RemoveMenu(MenuRemoveModelcs menuRemoveModelcs)
+        public ServiceResult RemoveMenu(MenuRemoveDto menuRemoveModelcs)
         {
-            ServiceResult result = new ServiceResult();
+            Service result = new Service();
             try
             {
                 result.Data = MenuDb.Remove(menuRemoveModelcs);
@@ -60,9 +68,9 @@ namespace RestaurantPro2.Menu.Application.Services
             return result;
         }
 
-        public ServiceResult SaveMenu(MenuSaveModel menuSaveModel)
+        public ServiceResult SaveMenu(MenuSaveDto menuSaveModel)
         {
-            ServiceResult result = new ServiceResult();
+            Service result = new Service();
             try
             {
                 result.Data = MenuDb.Save(menuSaveModel);
@@ -76,9 +84,9 @@ namespace RestaurantPro2.Menu.Application.Services
             return result;
         }
 
-        public ServiceResult UptadeMenu(MenuUpdateModel menuUpdateModel)
+        public ServiceResult UptadeMenu(MenuUpdateDto menuUpdateModel)
         {
-            ServiceResult result = new ServiceResult();
+            Service result = new Service();
             try
             {
                 result.Data = MenuDb.Uptade(menuUpdateModel);

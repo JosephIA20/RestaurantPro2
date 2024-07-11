@@ -1,10 +1,10 @@
 ﻿
 namespace RestaurantPro2.Menu.Application.Core
 {
-     public class ServicesResult
+     public class Service
     {
 
-            public ServicesResult()
+            public Service()
             {
                 this.Success = true;
             }
