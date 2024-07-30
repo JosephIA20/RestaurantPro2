@@ -1,5 +1,5 @@
 ﻿
-namespace RestaurantPro2.Menu.Application.Exceptions
+namespace RestaurantPro2.menu.Application.Exceptions
 {
    public class MenuServiceException : Exception
     {
@@ -7,6 +7,8 @@ namespace RestaurantPro2.Menu.Application.Exceptions
             {
 
             }
+
+
         }
 
     }

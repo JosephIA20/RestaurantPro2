@@ -5,17 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantPro2.Menu.Application.Dtos
+namespace RestaurantPro2.menu.Application.Dtos
 {
-    public abstract class MenuModelBase
+    public  class MenuModelBase
     {
-        [Key]
         public int? IdPlato { get; set; }
         public string Nombre { get; set; }
 
         public string Descripcion { get; set; }
         public Decimal? Precio { get; set; }
         public string Categoria { get; set; }
+
+        public DateTime? ModifyDate { get; set; }
 
     }
 }

@@ -1,13 +1,10 @@
 ﻿
 using RestaurantPro2.Common.Data.Repository;
 
-namespace RestaurantPro2.Menu.Domain.interfaces
+namespace RestaurantPro2.menu.Domain.interfaces
 {
-    public interface IMenuRepository : IBaseRepository<Menu.Domain.Entities.Menu,int>
+    public interface IMenuRepository : IBaseRepository<Entities.Menu,int>
     {
-
-        List<Menu.Domain.Entities.Menu> GetMenus(int menuId);
-
 
     }
 

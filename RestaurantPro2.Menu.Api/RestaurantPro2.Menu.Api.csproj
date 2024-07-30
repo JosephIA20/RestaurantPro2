@@ -12,8 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestaurantPro2.Course.IOC\RestaurantPro2.Menu.IOC.csproj" />
-    <ProjectReference Include="..\RestaurantPro2.Menu.Application\RestaurantPro2.Menu.Application.csproj" />
-    <ProjectReference Include="..\RestaurantPro2.Menu.Persistence\RestaurantPro2.Menu.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

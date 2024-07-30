@@ -1,5 +1,7 @@
 ﻿
-namespace RestaurantPro2.Menu.Application.Dtos
+using RestaurantPro2.menu.Application.Core;
+
+namespace RestaurantPro2.menu.Application.Dtos
 {
     public class MenuSaveDto : MenuModelBase
     {

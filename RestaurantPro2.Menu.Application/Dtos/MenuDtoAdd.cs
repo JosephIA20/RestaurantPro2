@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantPro2.Menu.Application.Dtos
+namespace RestaurantPro2.menu.Application.Dtos
 {
     public record MenuDtoAdd
     {  

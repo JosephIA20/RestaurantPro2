@@ -1,6 +1,6 @@
 ﻿
 
-namespace RestaurantPro2.Menu.Application.Dtos
+namespace RestaurantPro2.menu.Application.Dtos
 {
     public class MenuRemoveDto : MenuModelBase
     {

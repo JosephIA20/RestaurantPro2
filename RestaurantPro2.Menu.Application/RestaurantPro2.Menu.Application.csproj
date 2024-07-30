@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantPro2.Menu.Persistence\RestaurantPro2.Menu.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

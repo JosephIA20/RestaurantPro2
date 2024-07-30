@@ -1,18 +1,17 @@
-﻿
-using Microsoft.Extensions.DependencyInjection;
-using RestaurantPro2.Menu.Application.Interfaces;
-using RestaurantPro2.Menu.Domain.interfaces;
-using RestaurantPro2.Menu.Persistence.Repositorys;
-using System.Runtime.Intrinsics.X86;
+﻿using Microsoft.Extensions.DependencyInjection;
+using RestaurantPro2.menu.Application.Contracts;
+using RestaurantPro2.menu.Application.Services;
+using RestaurantPro2.menu.Domain.interfaces;
+using RestaurantPro2.menu.Persistence.Repositores;
 
-namespace RestaurantPro2.Course.IOC.Dependency
+namespace RestaurantPro2.menu.IOC.Dependency
 {
     public static class MenuDependency
     {
-        public static void AddMenuDependency(this ServiceCollection service)
+        public static void AddMenuDependency(this IServiceCollection service)
         {
-            service.AddScoped<IMenuRepository, MenuRepository>();
-
+            service.AddScoped<IMenuRepository, MenuRepositories>();
+            service.AddHttpClient<MenuServiceWep>();
             #region"Service"
             service.AddTransient<IMenuService, MenuService>();
             #endregion

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 
-namespace RestaurantPro2.Menu.Persistence.Context
+namespace RestaurantPro2.menu.Persistence.Context
 {
     public class RestauranteContext : DbContext
     {
